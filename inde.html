@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>Refaccionaria de Partes Eléctricas Millán</title>
+<title>MINI SUPER "LA GÜERA"</title>
 <style>
 /* ══════════════════════════════════════
    RESET & VARIABLES
@@ -733,183 +733,89 @@ header{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;pad
 ══════════════════════════════════════ -->
 <script>
 const productos = [
-// ── ORIGINALES ──
-{"codigo":"SF492","descripcion":"SOLENOIDE PARED ACURAT","precio":195,"stock":5,"categoria":"Solenoides"},
-{"codigo":"A91020","descripcion":"ANTISULFATANTE CAJA CON 30 PZAS","precio":239.80,"stock":2,"categoria":"Accesorios"},
-{"codigo":"CINTAC","descripcion":"CINTA PLASTICA COOPER X10","precio":101,"stock":2,"categoria":"Accesorios"},
-{"codigo":"SPPS100","descripcion":"SWITCH 75 AMP ARROW SPPS100","precio":136,"stock":5,"categoria":"Switches"},
-{"codigo":"SPPS200","descripcion":"SWITCH LUZ UNIVERSAL ARROW SPPS200","precio":12,"stock":5,"categoria":"Switches"},
-{"codigo":"CVF49","descripcion":"CARBON MARCHA BOSCH VF49","precio":16,"stock":20,"categoria":"Carbones"},
-{"codigo":"F552","descripcion":"FLASHER 552 WAGNER","precio":64,"stock":5,"categoria":"Flashers"},
-{"codigo":"FD1211","descripcion":"FLASHER HD12 TRIDON STAN AUTOMOTIV FHD125","precio":61,"stock":5,"categoria":"Flashers"},
-{"codigo":"P905855","descripcion":"PASTILLA IGNICION VW 2930000","precio":92,"stock":5,"categoria":"Ignicion"},
-{"codigo":"P905865","descripcion":"PASTILLA IGNICION VW JETTA A3 905865 2930600","precio":5,"stock":5,"categoria":"Ignicion"},
-{"codigo":"TZ38C","descripcion":"TERMINAL ZAPATA 3/8 COBRIZADA","precio":89,"stock":20,"categoria":"Terminales"},
-{"codigo":"S82602","descripcion":"SWITCH 2 PASOS ARROW 82602","precio":68,"stock":5,"categoria":"Switches"},
-{"codigo":"S82600","descripcion":"SWITCH 1 PASO ARROW S82600","precio":13,"stock":5,"categoria":"Switches"},
-{"codigo":"EU9004","descripcion":"ENCHUFE UNIDAD FOCO 9004","precio":12,"stock":10,"categoria":"Enchufes"},
-{"codigo":"EUVW","descripcion":"ENCHUFE UNIDAD FOCO H4 VW BUENO","precio":12,"stock":10,"categoria":"Enchufes"},
-{"codigo":"T10P","descripcion":"TERMINAL BATERIA PLACA 4 TORNILLOS T01010","precio":33,"stock":10,"categoria":"Terminales"},
-{"codigo":"T5L","descripcion":"TERMINAL BATERIA PLACA T5L","precio":17.50,"stock":10,"categoria":"Terminales"},
-{"codigo":"JS2011","descripcion":"BOCINA CLAXON VW HELLA","precio":121,"stock":3,"categoria":"Bocinas"},
-{"codigo":"01200","descripcion":"BOCINA CLAXON CARACOL SEGER DOBLE","precio":174,"stock":3,"categoria":"Bocinas"},
-{"codigo":"F90071LED4C","descripcion":"FOCO 9007 LED 4 CARAS ITALIOTURBO JUEGO","precio":253,"stock":2,"categoria":"Focos"},
-{"codigo":"F9005LED4C","descripcion":"FOCO 9005 LED 4 CARAS FOLHID9005-GLA","precio":220,"stock":2,"categoria":"Focos"},
-{"codigo":"F9004LED4C","descripcion":"FOCO 9004 LED 4 CARAS ITALIOTURBO JUEGO","precio":220,"stock":2,"categoria":"Focos"},
-{"codigo":"FHDI7LED4C","descripcion":"FOCO H7 LED 4 CARAS ITALIOTURBO JUEGO","precio":220,"stock":2,"categoria":"Focos"},
-{"codigo":"FH11LED4C","descripcion":"FOCO H11 LED 4 CARAS ITALIOTURBO JUEGO","precio":253,"stock":2,"categoria":"Focos"},
-{"codigo":"FH4LLED4C","descripcion":"FOCO H4 LED 4 CARAS ITALIOTURBO JUEGO","precio":98,"stock":2,"categoria":"Focos"},
-{"codigo":"BM70S82","descripcion":"BULBO MOTOVENT. VW CARIBE 82/68","precio":154,"stock":3,"categoria":"Bulbos"},
-{"codigo":"BM740","descripcion":"BULBO MOTOVENT. GM CHEVY","precio":149,"stock":3,"categoria":"Bulbos"},
-{"codigo":"BM71795","descripcion":"BULBO MOTOVENT. VW COMBI 95/102","precio":39,"stock":5,"categoria":"Bulbos"},
-{"codigo":"BR109","descripcion":"BALERO RODILLO DELCO 130 AMP ECONOM","precio":176,"stock":5,"categoria":"Baleros"},
-{"codigo":"M110881","descripcion":"MARCADOR ACEITE VEETHREE 10151","precio":386,"stock":2,"categoria":"Medidores"},
-{"codigo":"M37011","descripcion":"MARCADOR TEMPERATURA VDO","precio":187,"stock":2,"categoria":"Medidores"},
-{"codigo":"PYANQUI","descripcion":"PALANCA DIRECCIONAL YANQUI","precio":264,"stock":2,"categoria":"Palancas"},
-{"codigo":"M4365900","descripcion":"MOTOR PLACA ELEVADOR NISSAN TSURU GS","precio":114,"stock":2,"categoria":"Motores"},
-{"codigo":"PDFR1070","descripcion":"PORTA DIODO FORD FR1070","precio":132,"stock":2,"categoria":"Porta Diodos"},
-{"codigo":"PDF01AUTOM","descripcion":"PORTA DIODO FORD FR192 AUTOMOTIVE","precio":165,"stock":2,"categoria":"Porta Diodos"},
-{"codigo":"PDIIHR778AUT","descripcion":"PORTA DIODO NISSAN HITACHI IHR 778","precio":75,"stock":2,"categoria":"Porta Diodos"},
-{"codigo":"PASCHEVY","descripcion":"PASTILLA IGNICION CHEVY 2 TIPOS","precio":396,"stock":3,"categoria":"Ignicion"},
-{"codigo":"P70568","descripcion":"PALANCA DIRECCIONAL GROTE CAMION","precio":317,"stock":1,"categoria":"Palancas"},
-{"codigo":"RIH738TP","descripcion":"REGULADOR NISSAN RIH 738 HITACHI","precio":223,"stock":2,"categoria":"Reguladores"},
-{"codigo":"RIH744ASS","descripcion":"REGULADOR NISSAN RIH 744 HITACHI ASSER","precio":116,"stock":2,"categoria":"Reguladores"},
-{"codigo":"RF784TR","descripcion":"REGULADOR FORD F784 NEGRO TRANSPO","precio":135,"stock":3,"categoria":"Reguladores"},
-{"codigo":"RF794TP","descripcion":"REGULADOR FORD F794 TOTAL PARTS","precio":114,"stock":3,"categoria":"Reguladores"},
-{"codigo":"R3258804","descripcion":"REGULADOR GM DELCO D411 CUTLAS","precio":143,"stock":3,"categoria":"Reguladores"},
-{"codigo":"RE140X","descripcion":"REGULADOR GM E-140XR","precio":114,"stock":5,"categoria":"Reguladores"},
-{"codigo":"RE141XR","descripcion":"REGULADOR FORD E-141XR","precio":114,"stock":5,"categoria":"Reguladores"},
-{"codigo":"RIB501","descripcion":"REGULADOR NISSAN TSURU CHUECO IB-501","precio":145,"stock":2,"categoria":"Reguladores"},
-{"codigo":"RD702TP","descripcion":"REGULADOR GM RD702 TOTAL PARTS","precio":126,"stock":5,"categoria":"Reguladores"},
-{"codigo":"RLE5001","descripcion":"REGULADOR NISSAN BARCO BOSCH LE5001","precio":248,"stock":5,"categoria":"Reguladores"},
-{"codigo":"S71025","descripcion":"SOLENOIDE UNIVERSAL ACURAT 71025","precio":182,"stock":5,"categoria":"Solenoides"},
-{"codigo":"FH10","descripcion":"FOCO 3157 HELLA X CAJA DE 10","precio":116,"stock":2,"categoria":"Focos"},
-{"codigo":"F7443AC","descripcion":"FOCO 7443 HELLA X CAJA DE 10","precio":157,"stock":2,"categoria":"Focos"},
-{"codigo":"F9006SH","descripcion":"FOCO 9006 55 HELLA BAJA","precio":47,"stock":3,"categoria":"Focos"},
-{"codigo":"F9005H","descripcion":"FOCO 9005 55 HELLA","precio":49,"stock":3,"categoria":"Focos"},
-{"codigo":"FH13H","descripcion":"FOCO H13 55 HELLA","precio":156,"stock":2,"categoria":"Focos"},
-{"codigo":"FH4H","descripcion":"FOCO H4 55 HELLA","precio":31,"stock":10,"categoria":"Focos"},
-{"codigo":"F9007H","descripcion":"FOCO 9007 55 HELLA","precio":49,"stock":5,"categoria":"Focos"},
-{"codigo":"F9004H","descripcion":"FOCO 9004 55 HELLA","precio":49,"stock":5,"categoria":"Focos"},
-{"codigo":"F67H","descripcion":"FOCO 67 HELLA X CAJA DE 10","precio":33,"stock":5,"categoria":"Focos"},
-{"codigo":"FH3H","descripcion":"FOCO H3 55 HELLA","precio":23,"stock":5,"categoria":"Focos"},
-{"codigo":"FH7H","descripcion":"FOCO H7 55 HELLA","precio":43,"stock":5,"categoria":"Focos"},
-{"codigo":"F158H","descripcion":"FOCO 158 HELLA X CAJA DE 10","precio":24,"stock":5,"categoria":"Focos"},
-{"codigo":"F1034H","descripcion":"FOCO 1034 HELLA X CAJA DE 10","precio":35,"stock":5,"categoria":"Focos"},
-{"codigo":"F1176H","descripcion":"FOCO 1176 HELLA X CAJA DE 10","precio":37,"stock":5,"categoria":"Focos"},
-{"codigo":"F1141H","descripcion":"FOCO 1141 HELLA X CAJA DE 10","precio":35,"stock":5,"categoria":"Focos"},
-{"codigo":"BENDIXZEN","descripcion":"BENDIX ZEN FORD MOTORCRAF 10 DIENTES","precio":114,"stock":1,"categoria":"Bendix"},
-{"codigo":"AUTOBSCH","descripcion":"AUTOMATICO USATECH FORD SISTEMA BOSCH","precio":220,"stock":1,"categoria":"Automaticos"},
-{"codigo":"PCALTER2","descripcion":"PORTA CARBON ALTER FORD 2 GENERACION","precio":24,"stock":1,"categoria":"Porta Carbones"},
-{"codigo":"PCALTER39","descripcion":"PORTA CARBON ALTER CUTLAS 39106","precio":29,"stock":1,"categoria":"Porta Carbones"},
-{"codigo":"PCALTERCAV","descripcion":"PORTA CARBON ALTER DELCO CAVALIER","precio":29,"stock":1,"categoria":"Porta Carbones"},
-{"codigo":"PCALTERFGR","descripcion":"PORTA CARBON ALTER FORD MOTORC GRIS","precio":26,"stock":1,"categoria":"Porta Carbones"},
-{"codigo":"PCALTER21","descripcion":"PORTA CARBON ALTER DELCO 21SI","precio":35,"stock":1,"categoria":"Porta Carbones"},
-{"codigo":"SWCUB","descripcion":"SWITCH LLAVE UNIVERSAL CUB","precio":121,"stock":1,"categoria":"Switches"},
-{"codigo":"MODVW7","descripcion":"MODULO ENCENDIDO VW 7 PINS TEMIC","precio":231,"stock":1,"categoria":"Modulos"},
-{"codigo":"AUTOGM","descripcion":"AUTOMATICO USATECH GM DELCO SUBURBAN","precio":206,"stock":1,"categoria":"Automaticos"},
-{"codigo":"AUTONISS","descripcion":"AUTOMATICO USATECH NISSAN HITACHI","precio":215,"stock":1,"categoria":"Automaticos"},
-{"codigo":"AUTOVW","descripcion":"AUTOMATICO TOTAL PARTS VW SEDAN 11840","precio":248,"stock":1,"categoria":"Automaticos"},
-{"codigo":"AUTOFORD","descripcion":"AUTOMATICO USATECH FORD MOTORCRAF","precio":330,"stock":1,"categoria":"Automaticos"},
-{"codigo":"BGNI3","descripcion":"BOMBA GASOLINA BOSCH NISSAN TSURU III","precio":253,"stock":1,"categoria":"Bombas"},
-{"codigo":"BGTEC","descripcion":"BOMBA GASOLINA TECNOFUEL UNIVERSAL","precio":35,"stock":1,"categoria":"Bombas"},
-{"codigo":"BOT2P","descripcion":"BOTON 2 POLOS MARCHA REFORZADO","precio":0,"stock":1,"categoria":"Botones"},
-// ── SENSORES ──
-{"codigo":"SEN-O2-VW","descripcion":"SENSOR OXIGENO VW JETTA A4/A5 BOSCH","precio":380,"stock":3,"categoria":"Sensores"},
-{"codigo":"SEN-O2-NISS","descripcion":"SENSOR OXIGENO NISSAN TSURU/SENTRA NTK","precio":350,"stock":3,"categoria":"Sensores"},
-{"codigo":"SEN-O2-GM","descripcion":"SENSOR OXIGENO GM CHEVY/CORSA BOSCH","precio":360,"stock":3,"categoria":"Sensores"},
-{"codigo":"SEN-O2-FORD","descripcion":"SENSOR OXIGENO FORD FIESTA/FOCUS BOSCH","precio":375,"stock":3,"categoria":"Sensores"},
-{"codigo":"SEN-TPS-VW","descripcion":"SENSOR TPS MARIPOSA VW JETTA A3/A4","precio":290,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-TPS-NISS","descripcion":"SENSOR TPS MARIPOSA NISSAN TSURU III","precio":275,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-TPS-GM","descripcion":"SENSOR TPS MARIPOSA GM CHEVY MONZA","precio":265,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-MAP-VW","descripcion":"SENSOR MAP PRESION VW JETTA 2.0","precio":320,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-MAP-NISS","descripcion":"SENSOR MAP PRESION NISSAN SENTRA B15","precio":310,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-CIG-VW","descripcion":"SENSOR CIGUENHAL VW JETTA A4/A5","precio":410,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-CIG-NISS","descripcion":"SENSOR CIGUENHAL NISSAN TSURU/SENTRA","precio":390,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-CIG-GM","descripcion":"SENSOR CIGUENHAL GM CHEVY CAVALIER","precio":385,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-CAM-VW","descripcion":"SENSOR ARBOL LEVAS VW JETTA A4","precio":445,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-CAM-NISS","descripcion":"SENSOR ARBOL LEVAS NISSAN ALTIMA","precio":420,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-TEMP-VW","descripcion":"SENSOR TEMPERATURA REFRIGERANTE VW","precio":185,"stock":4,"categoria":"Sensores"},
-{"codigo":"SEN-TEMP-GM","descripcion":"SENSOR TEMPERATURA REFRIGERANTE GM","precio":175,"stock":4,"categoria":"Sensores"},
-{"codigo":"SEN-TEMP-FORD","descripcion":"SENSOR TEMPERATURA REFRIGERANTE FORD","precio":180,"stock":4,"categoria":"Sensores"},
-{"codigo":"SEN-MAF-VW","descripcion":"SENSOR FLUJO AIRE MAF VW JETTA 2.0 BOSCH","precio":680,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-MAF-FORD","descripcion":"SENSOR FLUJO AIRE MAF FORD RANGER BOSCH","precio":650,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-NOC-VW","descripcion":"SENSOR DETONACION KNOCK VW JETTA","precio":310,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-VEL-NISS","descripcion":"SENSOR VELOCIDAD ABS NISSAN TSURU","precio":340,"stock":2,"categoria":"Sensores"},
-{"codigo":"SEN-VEL-VW","descripcion":"SENSOR VELOCIDAD ABS VW JETTA A4","precio":355,"stock":2,"categoria":"Sensores"},
-// ── BOBINAS ──
-{"codigo":"BOB-VW2L","descripcion":"BOBINA ENCENDIDO VW JETTA A4 2.0 BOSCH","precio":560,"stock":2,"categoria":"Bobinas"},
-{"codigo":"BOB-VW18","descripcion":"BOBINA ENCENDIDO VW JETTA A5 1.8T BOSCH","precio":610,"stock":2,"categoria":"Bobinas"},
-{"codigo":"BOB-NISS16","descripcion":"BOBINA ENCENDIDO NISSAN TSURU 1.6 NGK","precio":480,"stock":2,"categoria":"Bobinas"},
-{"codigo":"BOB-GM14","descripcion":"BOBINA ENCENDIDO GM CHEVY 1.4 DELPHI","precio":520,"stock":2,"categoria":"Bobinas"},
-{"codigo":"BOB-FORD16","descripcion":"BOBINA ENCENDIDO FORD FIESTA 1.6 BOSCH","precio":540,"stock":2,"categoria":"Bobinas"},
-{"codigo":"BOB-UNIVERSAL","descripcion":"BOBINA ENCENDIDO UNIVERSAL 12V","precio":240,"stock":5,"categoria":"Bobinas"},
-// ── CABLES BUJIA ──
-{"codigo":"CAB-BUJ-VW","descripcion":"CABLES BUJIA VW JETTA A3/A4 2.0 NGK","precio":310,"stock":3,"categoria":"Cables Bujia"},
-{"codigo":"CAB-BUJ-NISS","descripcion":"CABLES BUJIA NISSAN TSURU III 1.6 NGK","precio":285,"stock":3,"categoria":"Cables Bujia"},
-{"codigo":"CAB-BUJ-GM","descripcion":"CABLES BUJIA GM CHEVY CORSA BERU","precio":295,"stock":3,"categoria":"Cables Bujia"},
-{"codigo":"CAB-BUJ-FORD","descripcion":"CABLES BUJIA FORD FIESTA 1.6 NGK","precio":300,"stock":3,"categoria":"Cables Bujia"},
-// ── MODULOS ──
-{"codigo":"MOD-ENC-VW8","descripcion":"MODULO ENCENDIDO VW JETTA A3 8 PINS","precio":480,"stock":2,"categoria":"Modulos"},
-{"codigo":"MOD-IGN-NISS","descripcion":"MODULO IGNICION NISSAN TSURU III ICM","precio":520,"stock":2,"categoria":"Modulos"},
-{"codigo":"MOD-IAC-VW","descripcion":"MODULO CONTROL RALENTI IAC VW 2.0","precio":395,"stock":2,"categoria":"Modulos"},
-{"codigo":"MOD-IAC-GM","descripcion":"MODULO CONTROL RALENTI IAC GM CHEVY","precio":375,"stock":2,"categoria":"Modulos"},
-{"codigo":"MOD-RELAY-MAIN","descripcion":"RELAY PRINCIPAL COMPUTADORA VW JETTA","precio":145,"stock":5,"categoria":"Modulos"},
-// ── INYECTORES ──
-{"codigo":"INY-VW2L","descripcion":"INYECTOR BOSCH VW JETTA A3/A4 2.0 RECONSTRUIDO","precio":380,"stock":2,"categoria":"Inyectores"},
-{"codigo":"INY-NISS16","descripcion":"INYECTOR NISSAN TSURU 1.6 RECONSTRUIDO","precio":340,"stock":2,"categoria":"Inyectores"},
-{"codigo":"INY-GM14","descripcion":"INYECTOR GM CHEVY 1.4 MULTEC RECONSTRUIDO","precio":350,"stock":2,"categoria":"Inyectores"},
-{"codigo":"INY-FORD16","descripcion":"INYECTOR FORD FIESTA 1.6 RECONSTRUIDO","precio":360,"stock":2,"categoria":"Inyectores"},
-{"codigo":"INY-LIMPIEZA","descripcion":"LIQUIDO LIMPIEZA INYECTORES 250ML","precio":95,"stock":5,"categoria":"Inyectores"},
-{"codigo":"REG-PRES-VW","descripcion":"REGULADOR PRESION COMBUSTIBLE VW JETTA","precio":210,"stock":2,"categoria":"Inyectores"},
-// ── ALTERNADORES ──
-{"codigo":"ALT-VW60","descripcion":"ALTERNADOR VW JETTA A3 60 AMP RECONSTRUIDO","precio":1450,"stock":1,"categoria":"Alternadores"},
-{"codigo":"ALT-VW90","descripcion":"ALTERNADOR VW JETTA A4/A5 90 AMP RECONSTRUIDO","precio":1650,"stock":1,"categoria":"Alternadores"},
-{"codigo":"ALT-NISS60","descripcion":"ALTERNADOR NISSAN TSURU 60 AMP RECONSTRUIDO","precio":1380,"stock":1,"categoria":"Alternadores"},
-{"codigo":"ALT-GM70","descripcion":"ALTERNADOR GM CHEVY 70 AMP RECONSTRUIDO","precio":1420,"stock":1,"categoria":"Alternadores"},
-{"codigo":"ALT-FORD65","descripcion":"ALTERNADOR FORD FIESTA 65 AMP RECONSTRUIDO","precio":1490,"stock":1,"categoria":"Alternadores"},
-// ── ARRANQUE ──
-{"codigo":"MAR-VW","descripcion":"MARCHA ARRANQUE VW JETTA A3/A4 RECONSTRUIDA","precio":1250,"stock":1,"categoria":"Arranque"},
-{"codigo":"MAR-NISS","descripcion":"MARCHA ARRANQUE NISSAN TSURU RECONSTRUIDA","precio":1180,"stock":1,"categoria":"Arranque"},
-{"codigo":"MAR-GM","descripcion":"MARCHA ARRANQUE GM CHEVY CAVALIER RECONSTRUIDA","precio":1220,"stock":1,"categoria":"Arranque"},
-// ── BATERIAS ──
-{"codigo":"BAT-36AH","descripcion":"BATERIA 36 AH LIBRE MANTENIMIENTO","precio":890,"stock":2,"categoria":"Baterias"},
-{"codigo":"BAT-45AH","descripcion":"BATERIA 45 AH LIBRE MANTENIMIENTO","precio":1050,"stock":2,"categoria":"Baterias"},
-{"codigo":"BAT-60AH","descripcion":"BATERIA 60 AH LIBRE MANTENIMIENTO","precio":1280,"stock":2,"categoria":"Baterias"},
-{"codigo":"CARG-BAT","descripcion":"CARGADOR BATERIA 12V 6A AUTOMATICO","precio":450,"stock":2,"categoria":"Baterias"},
-{"codigo":"PASA-CORR","descripcion":"CABLES PASA CORRIENTE 400 AMP 3.5M","precio":320,"stock":3,"categoria":"Baterias"},
-// ── FOCOS LED EXTRA ──
-{"codigo":"FH16LED","descripcion":"FOCO H16 LED ANTINIEBLA PAR","precio":185,"stock":3,"categoria":"Focos"},
-{"codigo":"F880LED","descripcion":"FOCO 880/881 LED ANTINIEBLA PAR","precio":175,"stock":3,"categoria":"Focos"},
-{"codigo":"FLEDINT","descripcion":"FOCO LED INTERIOR 31MM BLANCO 6000K","precio":35,"stock":10,"categoria":"Focos"},
-{"codigo":"FLEDCANBUS","descripcion":"FOCO LED T10 CANBUS SIN ERROR PAR","precio":65,"stock":8,"categoria":"Focos"},
-{"codigo":"KIT-XENON","descripcion":"KIT XENON HID H4 6000K 35W COMPLETO","precio":450,"stock":2,"categoria":"Focos"},
-// ── FUSIBLES Y RELAYS ──
-{"codigo":"FUSIBLES-MX","descripcion":"FUSIBLES MINIATURA SURTIDOS 5-30A CAJA 100PZ","precio":75,"stock":5,"categoria":"Fusibles"},
-{"codigo":"FUSIBLES-STD","descripcion":"FUSIBLES ESTANDAR SURTIDOS 5-30A CAJA 50PZ","precio":55,"stock":5,"categoria":"Fusibles"},
-{"codigo":"FUSIBLES-MAX","descripcion":"FUSIBLES MAXI SURTIDOS 20-80A 10PZ","precio":85,"stock":4,"categoria":"Fusibles"},
-{"codigo":"RELAY-12V","descripcion":"RELAY AUTOMOTRIZ 12V 40A 5 PINES","precio":45,"stock":15,"categoria":"Relays"},
-{"codigo":"RELAY-80A","descripcion":"RELAY CORTE CORRIENTE 80A CON CABLE","precio":95,"stock":5,"categoria":"Relays"},
-{"codigo":"CAJ-RELAYS","descripcion":"CAJA RELAYS FUSIBLES UNIVERSAL 4 CANALES","precio":180,"stock":3,"categoria":"Relays"},
-// ── TERMINALES Y CABLES ──
-{"codigo":"TERM-CRIM","descripcion":"TERMINALES CRIMPAR SURTIDAS 100 PZAS","precio":95,"stock":5,"categoria":"Terminales"},
-{"codigo":"TERM-FUSIBLE","descripcion":"PORTAFUSIBLES INLINE CON CABLE AWG 14","precio":45,"stock":10,"categoria":"Terminales"},
-{"codigo":"ARN-REPARACION","descripcion":"ARNES REPARACION UNIVERSAL 15 CABLES","precio":120,"stock":3,"categoria":"Cables"},
-// ── ELECTRONICA ──
-{"codigo":"OBD2-BT","descripcion":"SCANNER OBD2 BLUETOOTH ELM327 ANDROID","precio":150,"stock":5,"categoria":"Electronica"},
-{"codigo":"OBD2-WIFI","descripcion":"SCANNER OBD2 WIFI ELM327 iOS/ANDROID","precio":180,"stock":3,"categoria":"Electronica"},
-{"codigo":"MULTIMETRO","descripcion":"MULTIMETRO DIGITAL AUTOMOTRIZ","precio":320,"stock":2,"categoria":"Electronica"},
-{"codigo":"PROB-CORR","descripcion":"PROBADOR CORRIENTE LAPIZ 6-24V","precio":65,"stock":8,"categoria":"Electronica"},
-// ── ALARMAS ──
-{"codigo":"ALARMA-BASI","descripcion":"ALARMA UNIVERSAL BASICA 2 CONTROLES","precio":350,"stock":2,"categoria":"Alarmas"},
-{"codigo":"ALARMA-PRO","descripcion":"ALARMA PROFESIONAL CON SENSOR MOVIMIENTO","precio":650,"stock":2,"categoria":"Alarmas"},
-{"codigo":"INMO-CORTE","descripcion":"INMOVILIZADOR CORTE CORRIENTE OCULTO","precio":280,"stock":3,"categoria":"Alarmas"},
-{"codigo":"GPS-TRACKER","descripcion":"RASTREADOR GPS 4G CON APP TIEMPO REAL","precio":890,"stock":2,"categoria":"Alarmas"},
-// ── ACCESORIOS ──
-{"codigo":"CINT-AISL","descripcion":"CINTA AISLANTE 3M SCOTCH 33+ PROFESIONAL","precio":45,"stock":10,"categoria":"Accesorios"},
-{"codigo":"CINT-ARNES","descripcion":"CINTA ARNES AUTOMOTRIZ 19MM X 25M","precio":65,"stock":8,"categoria":"Accesorios"},
-{"codigo":"LIMPIA-CONT","descripcion":"LIMPIA CONTACTOS ELECTRONICO QD 450ML","precio":135,"stock":3,"categoria":"Accesorios"},
-{"codigo":"GRAS-DIEL","descripcion":"GRASA DIELECTRICA SILICON 10G","precio":45,"stock":8,"categoria":"Accesorios"},
+// ── ORIGINALES ── 
+     # BEBIDAS
+  {"codigo":"COCACOLA600","descripcion":"COCA COLA 600ML","precio":18,"stock":48,"categoria":"Bebidas"},
+  {"codigo":"PEPSI600","descripcion":"PEPSI 600ML","precio":17,"stock":36,"categoria":"Bebidas"},
+  {"codigo":"AGUA500","descripcion":"AGUA SIMPLE 500ML","precio":10,"stock":60,"categoria":"Bebidas"},
+  {"codigo":"JARRITOS","descripcion":"JARRITOS SABORES 370ML","precio":16,"stock":24,"categoria":"Bebidas"},
+  {"codigo":"JUMEX250","descripcion":"JUMEX JUGO 250ML SURTIDO","precio":12,"stock":48,"categoria":"Bebidas"},
+  {"codigo":"LECHE1L","descripcion":"LECHE LALA ENTERA 1 LITRO","precio":28,"stock":24,"categoria":"Bebidas"},
+  {"codigo":"YOGURT","descripcion":"YOGURT ALPURA NATURAL 900G","precio":45,"stock":12,"categoria":"Bebidas"},
+  {"codigo":"CAFE NESCAFE","descripcion":"NESCAFE CLASICO SOBRE 2G","precio":5,"stock":100,"categoria":"Bebidas"},
+  {"codigo":"LIPTON","descripcion":"TE LIPTON SOBRE SURTIDO","precio":5,"stock":60,"categoria":"Bebidas"},
+  {"codigo":"GATORADE","descripcion":"GATORADE 500ML SURTIDO","precio":22,"stock":24,"categoria":"Bebidas"},
+
+  # BOTANAS
+  {"codigo":"SABRITAS40","descripcion":"SABRITAS ORIGINAL 40G","precio":20,"stock":30,"categoria":"Botanas"},
+  {"codigo":"DORITOS","descripcion":"DORITOS NACHO 45G","precio":20,"stock":30,"categoria":"Botanas"},
+  {"codigo":"RUFFLES","descripcion":"RUFFLES QUESO 45G","precio":20,"stock":24,"categoria":"Botanas"},
+  {"codigo":"CHEETOS","descripcion":"CHEETOS FLAMIN HOT 45G","precio":20,"stock":24,"categoria":"Botanas"},
+  {"codigo":"TAKIS","descripcion":"TAKIS FUEGO 68G","precio":25,"stock":24,"categoria":"Botanas"},
+  {"codigo":"PALOMITAS","descripcion":"PALOMITAS ACT II MANTEQUILLA","precio":18,"stock":20,"categoria":"Botanas"},
+  {"codigo":"NUEZ","descripcion":"CACAHUATES JAPONES 50G","precio":12,"stock":30,"categoria":"Botanas"},
+  {"codigo":"DUVALÍN","descripcion":"DUVALIN AVELLANA VAINILLA","precio":8,"stock":50,"categoria":"Botanas"},
+
+  # DULCES Y CHOCOLATES
+  {"codigo":"CARLOS5","descripcion":"CARLOS V CHOCOLATE 23G","precio":10,"stock":60,"categoria":"Dulces"},
+  {"codigo":"SNICKERS","descripcion":"SNICKERS 52G","precio":22,"stock":30,"categoria":"Dulces"},
+  {"codigo":"KRANKY","descripcion":"KRANKY CHOCOLATE CEREAL 30G","precio":10,"stock":48,"categoria":"Dulces"},
+  {"codigo":"PALETA","descripcion":"PALETA PAYASO","precio":8,"stock":48,"categoria":"Dulces"},
+  {"codigo":"CHICLE","descripcion":"CHICLE TRIDENT SURTIDO","precio":12,"stock":60,"categoria":"Dulces"},
+  {"codigo":"MAZAPAN","descripcion":"MAZAPAN DE LA ROSA","precio":6,"stock":60,"categoria":"Dulces"},
+
+  # LÁCTEOS Y FRÍOS
+  {"codigo":"QUESO200","descripcion":"QUESO MANCHEGO LALA 200G","precio":55,"stock":10,"categoria":"Lácteos"},
+  {"codigo":"MANTEQUILLA","descripcion":"MANTEQUILLA LALA 90G","precio":28,"stock":12,"categoria":"Lácteos"},
+  {"codigo":"CREMA","descripcion":"CREMA LALA 500G","precio":38,"stock":10,"categoria":"Lácteos"},
+  {"codigo":"JAMON200","descripcion":"JAMÓN FUD SANDWICH 200G","precio":42,"stock":8,"categoria":"Lácteos"},
+  {"codigo":"HUEVO","descripcion":"HUEVO BLANCO BACHOCO 12 PZA","precio":48,"stock":20,"categoria":"Lácteos"},
+
+  # ABARROTES
+  {"codigo":"ARROZKG","descripcion":"ARROZ MORELOS 1KG","precio":28,"stock":30,"categoria":"Abarrotes"},
+  {"codigo":"FRIJOLKG","descripcion":"FRIJOL NEGRO 1KG","precio":35,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"ACEITE","descripcion":"ACEITE VEGETAL 1 LITRO","precio":42,"stock":18,"categoria":"Abarrotes"},
+  {"codigo":"AZUCAR","descripcion":"AZÚCAR ESTÁNDAR 1KG","precio":28,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"SAL","descripcion":"SAL LA FINA 1KG","precio":18,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"SOPAS","descripcion":"MARUCHAN SOPA RAMEN SURTIDA","precio":14,"stock":60,"categoria":"Abarrotes"},
+  {"codigo":"ATUN","descripcion":"ATÚN DOLORES EN AGUA 140G","precio":22,"stock":36,"categoria":"Abarrotes"},
+  {"codigo":"SARDINA","descripcion":"SARDINA CALMEX JITOMATE","precio":22,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"TOMATE","descripcion":"SALSA TOMATE HERDEZ 210G","precio":22,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"MAYONESA","descripcion":"MAYONESA HELLMANN'S 390G","precio":48,"stock":12,"categoria":"Abarrotes"},
+  {"codigo":"MOSTAZA","descripcion":"MOSTAZA LA COSTEÑA 265G","precio":28,"stock":12,"categoria":"Abarrotes"},
+  {"codigo":"PASTA","descripcion":"PASTA BARILLA ESPAGUETI 500G","precio":25,"stock":18,"categoria":"Abarrotes"},
+
+  # TORTILLAS Y PAN
+  {"codigo":"TORTILLA","descripcion":"TORTILLA MAIZ 1KG","precio":22,"stock":20,"categoria":"Pan y Tortilla"},
+  {"codigo":"BIMBO","descripcion":"PAN BIMBO BLANCO 680G","precio":52,"stock":10,"categoria":"Pan y Tortilla"},
+  {"codigo":"TOSTADAS","descripcion":"TOSTADAS CHARRAS 180G","precio":22,"stock":18,"categoria":"Pan y Tortilla"},
+  {"codigo":"GALLETAS","descripcion":"GALLETAS MARIAS GAMESA 200G","precio":22,"stock":24,"categoria":"Pan y Tortilla"},
+
+  # LIMPIEZA
+  {"codigo":"DETERGENTE","descripcion":"DETERGENTE ROMA 500G","precio":25,"stock":18,"categoria":"Limpieza"},
+  {"codigo":"JABON","descripcion":"JABÓN ZOTE BLANCO 400G","precio":22,"stock":18,"categoria":"Limpieza"},
+  {"codigo":"PINOL","descripcion":"PINOL PINO 500ML","precio":25,"stock":12,"categoria":"Limpieza"},
+  {"codigo":"CLORO","descripcion":"CLORO CLORALEX 1 LITRO","precio":22,"stock":12,"categoria":"Limpieza"},
+  {"codigo":"ESPONJA","descripcion":"ESPONJA SCOTCH BRITE VERDE","precio":15,"stock":24,"categoria":"Limpieza"},
+  {"codigo":"BOLSAS","descripcion":"BOLSAS BASURA NEGRAS 10 PZA","precio":18,"stock":20,"categoria":"Limpieza"},
+
+  # HIGIENE
+  {"codigo":"SHAMPOO","descripcion":"SHAMPOO HEAD SHOULDERS 180ML","precio":45,"stock":12,"categoria":"Higiene"},
+  {"codigo":"JABONBANO","descripcion":"JABÓN DE BAÑO PALMOLIVE 150G","precio":18,"stock":24,"categoria":"Higiene"},
+  {"codigo":"PASTADENT","descripcion":"PASTA DENTAL COLGATE 75ML","precio":28,"stock":18,"categoria":"Higiene"},
+  {"codigo":"CEPILLO","descripcion":"CEPILLO DENTAL COLGATE SUAVE","precio":22,"stock":18,"categoria":"Higiene"},
+  {"codigo":"PAPEL","descripcion":"PAPEL HIGIÉNICO REGIO 4 ROLLOS","precio":35,"stock":20,"categoria":"Higiene"},
+  {"codigo":"SERVILLETAS","descripcion":"SERVILLETAS KLEENEX 100 PZA","precio":18,"stock":24,"categoria":"Higiene"},
+
+  # CIGARROS Y MISC
+  {"codigo":"MARLBORO","descripcion":"CIGARRO MARLBORO ROJO CAJETILLA","precio":72,"stock":10,"categoria":"Varios"},
+  {"codigo":"LIGHTER","descripcion":"ENCENDEDOR BIC SURTIDO","precio":18,"stock":20,"categoria":"Varios"},
+  {"codigo":"PILAS2AA","descripcion":"PILAS DURACELL AA 2 PZA","precio":42,"stock":12,"categoria":"Varios"},
+  {"codigo":"SALDO50","descripcion":"SALDO TELCEL $50","precio":50,"stock":99,"categoria":"Recargas"},
+  {"codigo":"SALDO100","descripcion":"SALDO TELCEL $100","precio":100,"stock":99,"categoria":"Recargas"},
+  {"codigo":"SALDO200","descripcion":"SALDO MOVISTAR $200","precio":200,"stock":99,"categoria":"Recargas"},
+]
+
 ];
 </script>
 
@@ -969,15 +875,11 @@ function irACobrarCon(codigo){
 
 function renderCats(){
   const cats = [...new Set(productos.map(p=>p.categoria))].sort();
-  const iconos = {
-    'Focos':'💡','Reguladores':'⚡','Bobinas':'🔥','Bombas':'💧','Sensores':'📡',
-    'Alternadores':'⚙️','Arranque':'🔑','Baterias':'🔋','Fusibles':'🔌','Relays':'🔀',
-    'Switches':'🔘','Modulos':'🖥️','Inyectores':'💉','Alarmas':'🚨','Electronica':'📟',
-    'Terminales':'🔩','Solenoides':'🧲','Flashers':'💫','Accesorios':'🧰',
-    'Carbones':'⬛','Enchufes':'🔌','Bulbos':'💡','Medidores':'📊','Motores':'⚙️',
-    'Palancas':'🕹️','Bocinas':'📯','Baleros':'⭕','Automaticos':'🔄','Bendix':'⚙️',
-    'Porta Diodos':'🔋','Ignicion':'🔥','Cables Bujia':'🔗','Cables':'🔗',
-    'Porta Carbones':'⬛','Botones':'🔘'
+  const iconos = {                                │
+│ 'Bebidas':'🥤','Botanas':'🍿','Dulces':'🍬',                    │
+│ 'Lácteos':'🥛','Abarrotes':'🛒','Pan y Tortilla':'🍞',          │
+│ 'Limpieza':'🧹','Higiene':'🧴','Varios':'📦',                   │
+│ 'Recargas':'📱'
   };
   const counts = {};
   productos.forEach(p=>{ counts[p.categoria]=(counts[p.categoria]||0)+1; });
@@ -1188,8 +1090,8 @@ function generarTicket(){
   const metodos={efectivo:'Efectivo',mp:'Mercado Pago',tarjeta:'Tarjeta',transferencia:'Transferencia'};
   let t='';
   t+='================================\n';
-  t+='   REFACCIONARIA MILLÁN\n';
-  t+='   Partes Eléctricas\n';
+  t+='   MNI SUPER LA GÜERA\n';
+  t+='   MINI SUPER LA GÜERA\n';
   t+='--------------------------------\n';
   t+=`Fecha: ${fecha}  ${hora}\n`;
   t+=`Folio: ${folio}\n`;
