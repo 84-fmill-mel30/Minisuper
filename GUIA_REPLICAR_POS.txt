@@ -1,0 +1,94 @@
+══════════════════════════════════════════════════════
+ GUÍA RÁPIDA — CÓMO REPLICAR EL POS EN OTRO NEGOCIO
+ Refaccionaria Millán — Sistema POS
+══════════════════════════════════════════════════════
+
+Tiempo estimado: 15-20 minutos
+Lo que necesitas: index.html + el catálogo del negocio
+
+══════════════════════════════════════════════════════
+PASO 1 — COPIAR EL ARCHIVO
+══════════════════════════════════════════════════════
+
+1. Copia tu index.html
+2. Renómbralo como: index_TIPODENEGOCIO.html
+   Ejemplo: index_minisúper.html
+            index_farmacia.html
+            index_ferreteria.html
+
+══════════════════════════════════════════════════════
+PASO 2 — CAMBIAR EL NOMBRE DEL NEGOCIO
+══════════════════════════════════════════════════════
+
+Abre el archivo y busca (Ctrl+F) estas palabras
+y cámbialas por las del nuevo negocio:
+
+┌─────────────────────────────────────────────────┐
+│ BUSCA                → CAMBIA POR               │
+├─────────────────────────────────────────────────┤
+│ Refaccionaria Millán → Mini Súper Don Pepe       │
+│ Partes Eléctricas    → Abarrotes y más           │
+│ Alpuyeca, Morelos    → [dirección del negocio]   │
+│ 777-683-8196         → [teléfono del negocio]    │
+│ 221-956-7392         → [WhatsApp del negocio]    │
+│ 522219567392         → [número WA sin espacios]  │
+│ FM095329@gmail.com   → [correo del negocio]      │
+│ +160 productos       → [cuántos productos tiene] │
+└─────────────────────────────────────────────────┘
+
+══════════════════════════════════════════════════════
+PASO 3 — CAMBIAR LOS PRODUCTOS
+══════════════════════════════════════════════════════
+
+1. Busca en el archivo:    const productos = [
+2. Selecciona TODO lo que está entre [ y el cierre ]
+3. Bórralo
+4. Pega los productos del negocio del archivo
+   CATALOGOS_NEGOCIOS.txt
+
+Cada producto tiene este formato — no lo cambies:
+{"codigo":"CLAVE","descripcion":"NOMBRE","precio":00,"stock":0,"categoria":"Categoría"},
+
+══════════════════════════════════════════════════════
+PASO 4 — SUBIR AL REPO
+══════════════════════════════════════════════════════
+
+Opción A — Mismo repo, archivo diferente:
+  github.com/84-fmill-mel30/Refaccionaria_Millan./
+  Sube: index_minisúper.html
+  URL del cliente: 84-fmill-mel30.github.io/Refaccionaria_Millan./index_minisúper.html
+
+Opción B — Repo nuevo por cliente (RECOMENDADO):
+  Crea repo: github.com/84-fmill-mel30/MiniSuperDonPepe
+  Sube: index.html
+  Habilita GitHub Pages
+  URL limpia: 84-fmill-mel30.github.io/MiniSuperDonPepe/
+
+══════════════════════════════════════════════════════
+PASO 5 — CONFIGURAR QR DE COBRO
+══════════════════════════════════════════════════════
+
+El dueño del negocio entra a la app y configura:
+  - Sección Cobrar → ⚙️ Config QR
+  - Pone su nombre, banco, CLABE/CoDi
+
+══════════════════════════════════════════════════════
+ CATÁLOGOS DISPONIBLES EN CATALOGOS_NEGOCIOS.txt
+══════════════════════════════════════════════════════
+
+ 1. 🛒 MINI SÚPER / ABARROTES   — 60 productos
+ 2. 💊 FARMACIA / BOTICA        — 35 productos
+ 3. 🔨 FERRETERÍA               — 40 productos
+ 4. 🍕 RESTAURANTE / FONDA      — 30 productos
+ 5. 📚 PAPELERÍA                — 35 productos
+ 6. 🌸 ESTÉTICA / PELUQUERÍA    — 25 productos
+
+══════════════════════════════════════════════════════
+ PRECIO SUGERIDO POR CLIENTE
+══════════════════════════════════════════════════════
+
+ Instalación y configuración:  $500 - $800 MXN
+ Soporte mensual:              $200 - $300 MXN/mes
+ Agregar productos nuevos:     $100 - $200 MXN
+
+══════════════════════════════════════════════════════

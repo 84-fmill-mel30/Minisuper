@@ -1,0 +1,342 @@
+# 📦 CATÁLOGOS POR TIPO DE NEGOCIO
+# Refaccionaria Millán — Sistema POS
+# =====================================
+# 
+# ¿CÓMO USAR ESTE ARCHIVO?
+# =====================================
+# 1. Abre tu index.html
+# 2. Busca la sección que dice:  const productos = [
+# 3. Borra todo lo que está entre los corchetes [ ]
+# 4. Pega los productos del negocio que quieras
+# 5. Busca "Refaccionaria Millán" y cámbialo por el nombre del negocio
+# 6. Guarda y sube al repo ✅
+#
+# ¡Y YA! Todo lo demás (cobro, escáner, ticket, QR) queda igual.
+# =====================================
+
+
+# ══════════════════════════════════════════════════════
+# 🛒 1. MINI SÚPER / TIENDA DE ABARROTES
+# ══════════════════════════════════════════════════════
+# Nombre sugerido: "Mini Súper [Nombre]"
+# Cambiar en index.html:
+#   - "Refaccionaria Millán" → "Mini Súper Don Pepe"
+#   - "Partes Eléctricas Automotrices" → "Abarrotes y más"
+
+MINISÚPER = [
+  # BEBIDAS
+  {"codigo":"COCACOLA600","descripcion":"COCA COLA 600ML","precio":18,"stock":48,"categoria":"Bebidas"},
+  {"codigo":"PEPSI600","descripcion":"PEPSI 600ML","precio":17,"stock":36,"categoria":"Bebidas"},
+  {"codigo":"AGUA500","descripcion":"AGUA SIMPLE 500ML","precio":10,"stock":60,"categoria":"Bebidas"},
+  {"codigo":"JARRITOS","descripcion":"JARRITOS SABORES 370ML","precio":16,"stock":24,"categoria":"Bebidas"},
+  {"codigo":"JUMEX250","descripcion":"JUMEX JUGO 250ML SURTIDO","precio":12,"stock":48,"categoria":"Bebidas"},
+  {"codigo":"LECHE1L","descripcion":"LECHE LALA ENTERA 1 LITRO","precio":28,"stock":24,"categoria":"Bebidas"},
+  {"codigo":"YOGURT","descripcion":"YOGURT ALPURA NATURAL 900G","precio":45,"stock":12,"categoria":"Bebidas"},
+  {"codigo":"CAFE NESCAFE","descripcion":"NESCAFE CLASICO SOBRE 2G","precio":5,"stock":100,"categoria":"Bebidas"},
+  {"codigo":"LIPTON","descripcion":"TE LIPTON SOBRE SURTIDO","precio":5,"stock":60,"categoria":"Bebidas"},
+  {"codigo":"GATORADE","descripcion":"GATORADE 500ML SURTIDO","precio":22,"stock":24,"categoria":"Bebidas"},
+
+  # BOTANAS
+  {"codigo":"SABRITAS40","descripcion":"SABRITAS ORIGINAL 40G","precio":20,"stock":30,"categoria":"Botanas"},
+  {"codigo":"DORITOS","descripcion":"DORITOS NACHO 45G","precio":20,"stock":30,"categoria":"Botanas"},
+  {"codigo":"RUFFLES","descripcion":"RUFFLES QUESO 45G","precio":20,"stock":24,"categoria":"Botanas"},
+  {"codigo":"CHEETOS","descripcion":"CHEETOS FLAMIN HOT 45G","precio":20,"stock":24,"categoria":"Botanas"},
+  {"codigo":"TAKIS","descripcion":"TAKIS FUEGO 68G","precio":25,"stock":24,"categoria":"Botanas"},
+  {"codigo":"PALOMITAS","descripcion":"PALOMITAS ACT II MANTEQUILLA","precio":18,"stock":20,"categoria":"Botanas"},
+  {"codigo":"NUEZ","descripcion":"CACAHUATES JAPONES 50G","precio":12,"stock":30,"categoria":"Botanas"},
+  {"codigo":"DUVALÍN","descripcion":"DUVALIN AVELLANA VAINILLA","precio":8,"stock":50,"categoria":"Botanas"},
+
+  # DULCES Y CHOCOLATES
+  {"codigo":"CARLOS5","descripcion":"CARLOS V CHOCOLATE 23G","precio":10,"stock":60,"categoria":"Dulces"},
+  {"codigo":"SNICKERS","descripcion":"SNICKERS 52G","precio":22,"stock":30,"categoria":"Dulces"},
+  {"codigo":"KRANKY","descripcion":"KRANKY CHOCOLATE CEREAL 30G","precio":10,"stock":48,"categoria":"Dulces"},
+  {"codigo":"PALETA","descripcion":"PALETA PAYASO","precio":8,"stock":48,"categoria":"Dulces"},
+  {"codigo":"CHICLE","descripcion":"CHICLE TRIDENT SURTIDO","precio":12,"stock":60,"categoria":"Dulces"},
+  {"codigo":"MAZAPAN","descripcion":"MAZAPAN DE LA ROSA","precio":6,"stock":60,"categoria":"Dulces"},
+
+  # LÁCTEOS Y FRÍOS
+  {"codigo":"QUESO200","descripcion":"QUESO MANCHEGO LALA 200G","precio":55,"stock":10,"categoria":"Lácteos"},
+  {"codigo":"MANTEQUILLA","descripcion":"MANTEQUILLA LALA 90G","precio":28,"stock":12,"categoria":"Lácteos"},
+  {"codigo":"CREMA","descripcion":"CREMA LALA 500G","precio":38,"stock":10,"categoria":"Lácteos"},
+  {"codigo":"JAMON200","descripcion":"JAMÓN FUD SANDWICH 200G","precio":42,"stock":8,"categoria":"Lácteos"},
+  {"codigo":"HUEVO","descripcion":"HUEVO BLANCO BACHOCO 12 PZA","precio":48,"stock":20,"categoria":"Lácteos"},
+
+  # ABARROTES
+  {"codigo":"ARROZKG","descripcion":"ARROZ MORELOS 1KG","precio":28,"stock":30,"categoria":"Abarrotes"},
+  {"codigo":"FRIJOLKG","descripcion":"FRIJOL NEGRO 1KG","precio":35,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"ACEITE","descripcion":"ACEITE VEGETAL 1 LITRO","precio":42,"stock":18,"categoria":"Abarrotes"},
+  {"codigo":"AZUCAR","descripcion":"AZÚCAR ESTÁNDAR 1KG","precio":28,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"SAL","descripcion":"SAL LA FINA 1KG","precio":18,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"SOPAS","descripcion":"MARUCHAN SOPA RAMEN SURTIDA","precio":14,"stock":60,"categoria":"Abarrotes"},
+  {"codigo":"ATUN","descripcion":"ATÚN DOLORES EN AGUA 140G","precio":22,"stock":36,"categoria":"Abarrotes"},
+  {"codigo":"SARDINA","descripcion":"SARDINA CALMEX JITOMATE","precio":22,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"TOMATE","descripcion":"SALSA TOMATE HERDEZ 210G","precio":22,"stock":24,"categoria":"Abarrotes"},
+  {"codigo":"MAYONESA","descripcion":"MAYONESA HELLMANN'S 390G","precio":48,"stock":12,"categoria":"Abarrotes"},
+  {"codigo":"MOSTAZA","descripcion":"MOSTAZA LA COSTEÑA 265G","precio":28,"stock":12,"categoria":"Abarrotes"},
+  {"codigo":"PASTA","descripcion":"PASTA BARILLA ESPAGUETI 500G","precio":25,"stock":18,"categoria":"Abarrotes"},
+
+  # TORTILLAS Y PAN
+  {"codigo":"TORTILLA","descripcion":"TORTILLA MAIZ 1KG","precio":22,"stock":20,"categoria":"Pan y Tortilla"},
+  {"codigo":"BIMBO","descripcion":"PAN BIMBO BLANCO 680G","precio":52,"stock":10,"categoria":"Pan y Tortilla"},
+  {"codigo":"TOSTADAS","descripcion":"TOSTADAS CHARRAS 180G","precio":22,"stock":18,"categoria":"Pan y Tortilla"},
+  {"codigo":"GALLETAS","descripcion":"GALLETAS MARIAS GAMESA 200G","precio":22,"stock":24,"categoria":"Pan y Tortilla"},
+
+  # LIMPIEZA
+  {"codigo":"DETERGENTE","descripcion":"DETERGENTE ROMA 500G","precio":25,"stock":18,"categoria":"Limpieza"},
+  {"codigo":"JABON","descripcion":"JABÓN ZOTE BLANCO 400G","precio":22,"stock":18,"categoria":"Limpieza"},
+  {"codigo":"PINOL","descripcion":"PINOL PINO 500ML","precio":25,"stock":12,"categoria":"Limpieza"},
+  {"codigo":"CLORO","descripcion":"CLORO CLORALEX 1 LITRO","precio":22,"stock":12,"categoria":"Limpieza"},
+  {"codigo":"ESPONJA","descripcion":"ESPONJA SCOTCH BRITE VERDE","precio":15,"stock":24,"categoria":"Limpieza"},
+  {"codigo":"BOLSAS","descripcion":"BOLSAS BASURA NEGRAS 10 PZA","precio":18,"stock":20,"categoria":"Limpieza"},
+
+  # HIGIENE
+  {"codigo":"SHAMPOO","descripcion":"SHAMPOO HEAD SHOULDERS 180ML","precio":45,"stock":12,"categoria":"Higiene"},
+  {"codigo":"JABONBANO","descripcion":"JABÓN DE BAÑO PALMOLIVE 150G","precio":18,"stock":24,"categoria":"Higiene"},
+  {"codigo":"PASTADENT","descripcion":"PASTA DENTAL COLGATE 75ML","precio":28,"stock":18,"categoria":"Higiene"},
+  {"codigo":"CEPILLO","descripcion":"CEPILLO DENTAL COLGATE SUAVE","precio":22,"stock":18,"categoria":"Higiene"},
+  {"codigo":"PAPEL","descripcion":"PAPEL HIGIÉNICO REGIO 4 ROLLOS","precio":35,"stock":20,"categoria":"Higiene"},
+  {"codigo":"SERVILLETAS","descripcion":"SERVILLETAS KLEENEX 100 PZA","precio":18,"stock":24,"categoria":"Higiene"},
+
+  # CIGARROS Y MISC
+  {"codigo":"MARLBORO","descripcion":"CIGARRO MARLBORO ROJO CAJETILLA","precio":72,"stock":10,"categoria":"Varios"},
+  {"codigo":"LIGHTER","descripcion":"ENCENDEDOR BIC SURTIDO","precio":18,"stock":20,"categoria":"Varios"},
+  {"codigo":"PILAS2AA","descripcion":"PILAS DURACELL AA 2 PZA","precio":42,"stock":12,"categoria":"Varios"},
+  {"codigo":"SALDO50","descripcion":"SALDO TELCEL $50","precio":50,"stock":99,"categoria":"Recargas"},
+  {"codigo":"SALDO100","descripcion":"SALDO TELCEL $100","precio":100,"stock":99,"categoria":"Recargas"},
+  {"codigo":"SALDO200","descripcion":"SALDO MOVISTAR $200","precio":200,"stock":99,"categoria":"Recargas"},
+]
+
+
+# ══════════════════════════════════════════════════════
+# 💊 2. FARMACIA / BOTICA
+# ══════════════════════════════════════════════════════
+# Nombre sugerido: "Farmacia [Nombre]"
+# Cambiar: "Partes Eléctricas" → "Medicamentos y más"
+
+FARMACIA = [
+  # ANALGÉSICOS
+  {"codigo":"PARACETAMOL500","descripcion":"PARACETAMOL 500MG 10 TABLETAS","precio":18,"stock":30,"categoria":"Analgésicos"},
+  {"codigo":"IBUPROFENO400","descripcion":"IBUPROFENO 400MG 10 TABLETAS","precio":22,"stock":30,"categoria":"Analgésicos"},
+  {"codigo":"ASPIRINA","descripcion":"ASPIRINA 500MG 10 TABLETAS","precio":18,"stock":24,"categoria":"Analgésicos"},
+  {"codigo":"NAPROXENO","descripcion":"NAPROXENO 250MG 10 TABLETAS","precio":25,"stock":20,"categoria":"Analgésicos"},
+  {"codigo":"DICLOFENACO","descripcion":"DICLOFENACO 100MG GEL 30G","precio":45,"stock":15,"categoria":"Analgésicos"},
+
+  # RESFRIADO
+  {"codigo":"TYLENOL","descripcion":"TYLENOL GRIPAL 12 TABLETAS","precio":85,"stock":20,"categoria":"Resfriado"},
+  {"codigo":"VICKSVAP","descripcion":"VICK VAPORUB 50G","precio":55,"stock":15,"categoria":"Resfriado"},
+  {"codigo":"CLORFENAMINA","descripcion":"CLORFENAMINA 4MG 20 TABLETAS","precio":22,"stock":24,"categoria":"Resfriado"},
+  {"codigo":"AMBROXOL","descripcion":"AMBROXOL JARABE 120ML","precio":48,"stock":12,"categoria":"Resfriado"},
+
+  # ESTOMAGO
+  {"codigo":"PEPTO","descripcion":"PEPTO BISMOL TABLETAS 12 PZA","precio":65,"stock":18,"categoria":"Estómago"},
+  {"codigo":"OMEPRAZOL","descripcion":"OMEPRAZOL 20MG 14 CAPSULAS","precio":55,"stock":20,"categoria":"Estómago"},
+  {"codigo":"LOPERAMIDA","descripcion":"LOPERAMIDA 2MG 6 CAPSULAS","precio":35,"stock":20,"categoria":"Estómago"},
+  {"codigo":"SUERO","descripcion":"SUERO ORAL VIDA SUERO 1 LITRO","precio":22,"stock":24,"categoria":"Estómago"},
+
+  # VITAMINAS
+  {"codigo":"VITAMINAC","descripcion":"VITAMINA C 500MG 30 TABLETAS","precio":45,"stock":20,"categoria":"Vitaminas"},
+  {"codigo":"SUPRADYN","descripcion":"SUPRADYN MULTIVITAMINICO 30 TAB","precio":95,"stock":12,"categoria":"Vitaminas"},
+  {"codigo":"ZINCO","descripcion":"ZINC 10MG 30 TABLETAS","precio":38,"stock":18,"categoria":"Vitaminas"},
+
+  # PRIMEROS AUXILIOS
+  {"codigo":"GASAS","descripcion":"GASAS ESTERILES 10X10 5 PZA","precio":22,"stock":20,"categoria":"Primeros Auxilios"},
+  {"codigo":"VENDAS","descripcion":"VENDA ELÁSTICA 5CM X 5M","precio":28,"stock":15,"categoria":"Primeros Auxilios"},
+  {"codigo":"CURITAS","descripcion":"CURITAS ADHESIVAS 10 PZA SURTIDO","precio":18,"stock":24,"categoria":"Primeros Auxilios"},
+  {"codigo":"ISODINE","descripcion":"ISODINE ESPUMA 120ML","precio":45,"stock":12,"categoria":"Primeros Auxilios"},
+  {"codigo":"ALCOHOL","descripcion":"ALCOHOL ETÍLICO 70% 500ML","precio":35,"stock":18,"categoria":"Primeros Auxilios"},
+  {"codigo":"TERMOMETRO","descripcion":"TERMÓMETRO DIGITAL","precio":85,"stock":8,"categoria":"Primeros Auxilios"},
+
+  # HIGIENE
+  {"codigo":"TOALLAS","descripcion":"TOALLAS FEMENINAS KOTEX 10 PZA","precio":35,"stock":18,"categoria":"Higiene"},
+  {"codigo":"PRESERVATIVO","descripcion":"CONDONES DUREX 3 PZA","precio":45,"stock":20,"categoria":"Higiene"},
+  {"codigo":"ANTICONCEPTIVO","descripcion":"POSTDAY PÍLDORA DE EMERGENCIA","precio":185,"stock":10,"categoria":"Higiene"},
+]
+
+
+# ══════════════════════════════════════════════════════
+# 🔨 3. FERRETERÍA
+# ══════════════════════════════════════════════════════
+# Nombre sugerido: "Ferretería [Nombre]"
+# Cambiar: "Partes Eléctricas" → "Materiales y herramientas"
+
+FERRETERIA = [
+  # TORNILLERÍA
+  {"codigo":"TORN-34","descripcion":"TORNILLO 3/4 PUNTA FINA CAJA 100PZ","precio":35,"stock":20,"categoria":"Tornillería"},
+  {"codigo":"TORN-1","descripcion":"TORNILLO 1 PULGADA CAJA 100PZ","precio":38,"stock":20,"categoria":"Tornillería"},
+  {"codigo":"TORN-2","descripcion":"TORNILLO 2 PULGADAS CAJA 50PZ","precio":42,"stock":15,"categoria":"Tornillería"},
+  {"codigo":"TACO-FISHER","descripcion":"TACO FISHER 1/4 CAJA 100PZ","precio":28,"stock":20,"categoria":"Tornillería"},
+  {"codigo":"TUERCA-14","descripcion":"TUERCA 1/4 GALVANIZADA CAJA 50PZ","precio":22,"stock":20,"categoria":"Tornillería"},
+  {"codigo":"RONDANA","descripcion":"RONDANA PLANA 1/4 CAJA 50PZ","precio":18,"stock":20,"categoria":"Tornillería"},
+
+  # ELECTRICIDAD
+  {"codigo":"CABLE-DUPLEX","descripcion":"CABLE DUPLEX CAL 12 POR METRO","precio":18,"stock":100,"categoria":"Electricidad"},
+  {"codigo":"CABLE-THHN","descripcion":"CABLE THHN CAL 12 POR METRO","precio":16,"stock":100,"categoria":"Electricidad"},
+  {"codigo":"FOCO-LED9","descripcion":"FOCO LED 9W BLANCO FRIO","precio":45,"stock":30,"categoria":"Electricidad"},
+  {"codigo":"CONTACTO","descripcion":"CONTACTO DOBLE POLARIZADO","precio":35,"stock":20,"categoria":"Electricidad"},
+  {"codigo":"APAGADOR","descripcion":"APAGADOR SENCILLO LEVITON","precio":38,"stock":20,"categoria":"Electricidad"},
+  {"codigo":"PASTILLA","descripcion":"PASTILLA INTERRUPTORA 15A","precio":85,"stock":10,"categoria":"Electricidad"},
+  {"codigo":"CINTAAISLA","descripcion":"CINTA AISLANTE 3M 19MM","precio":28,"stock":24,"categoria":"Electricidad"},
+  {"codigo":"EXTENSION","descripcion":"EXTENSIÓN ELÉCTRICA 5 METROS","precio":95,"stock":10,"categoria":"Electricidad"},
+
+  # PLOMERÍA
+  {"codigo":"TUBO-PVC-12","descripcion":"TUBO PVC 1/2 PULGADA 3 METROS","precio":55,"stock":15,"categoria":"Plomería"},
+  {"codigo":"CODO-PVC","descripcion":"CODO PVC 1/2 PULGADA 90 GRADOS","precio":8,"stock":30,"categoria":"Plomería"},
+  {"codigo":"TEE-PVC","descripcion":"TEE PVC 1/2 PULGADA","precio":10,"stock":24,"categoria":"Plomería"},
+  {"codigo":"LLAVE-ESFERA","descripcion":"LLAVE ESFERA 1/2 CROMADA","precio":65,"stock":10,"categoria":"Plomería"},
+  {"codigo":"TEFLÓN","descripcion":"CINTA TEFLÓN ROLLO","precio":12,"stock":30,"categoria":"Plomería"},
+  {"codigo":"PEGAMENTO-PVC","descripcion":"PEGAMENTO PVC 120ML","precio":38,"stock":12,"categoria":"Plomería"},
+
+  # PINTURA
+  {"codigo":"PINTURA-BCA","descripcion":"PINTURA VINILICA BLANCA 4 LITROS","precio":185,"stock":8,"categoria":"Pintura"},
+  {"codigo":"LIJA-100","descripcion":"LIJA MADERA GRANO 100 PLIEGO","precio":8,"stock":30,"categoria":"Pintura"},
+  {"codigo":"BROCHA-3","descripcion":"BROCHA 3 PULGADAS CERDA","precio":35,"stock":12,"categoria":"Pintura"},
+  {"codigo":"RODILLO","descripcion":"RODILLO PINTURA 23CM CON MANGO","precio":55,"stock":8,"categoria":"Pintura"},
+  {"codigo":"MASKING","descripcion":"MASKING TAPE 48MM X 50M","precio":28,"stock":15,"categoria":"Pintura"},
+
+  # HERRAMIENTAS
+  {"codigo":"DESARMADOR","descripcion":"DESARMADOR PLANO 6 PULGADAS","precio":22,"stock":10,"categoria":"Herramientas"},
+  {"codigo":"DESARM-CRUZ","descripcion":"DESARMADOR CRUZ 6 PULGADAS","precio":22,"stock":10,"categoria":"Herramientas"},
+  {"codigo":"PINZA","descripcion":"PINZA DE PUNTA STANLEY 8 PULG","precio":85,"stock":6,"categoria":"Herramientas"},
+  {"codigo":"MARTILLO","descripcion":"MARTILLO UÑA 16 OZ TRUPER","precio":125,"stock":6,"categoria":"Herramientas"},
+  {"codigo":"FLEXOMETRO","descripcion":"FLEXÓMETRO 5 METROS TRUPER","precio":65,"stock":8,"categoria":"Herramientas"},
+  {"codigo":"NAVAJA","descripcion":"NAVAJA RETRÁCTIL TRUPER","precio":45,"stock":10,"categoria":"Herramientas"},
+
+  # ADHESIVOS
+  {"codigo":"SIKAFLEX","descripcion":"SIKAFLEX 221 NEGRO 300ML","precio":135,"stock":6,"categoria":"Adhesivos"},
+  {"codigo":"SILICÓN","descripcion":"SILICÓN TRANSPARENTE 280ML","precio":55,"stock":10,"categoria":"Adhesivos"},
+  {"codigo":"RESISTOL","descripcion":"RESISTOL 850 250ML","precio":38,"stock":10,"categoria":"Adhesivos"},
+  {"codigo":"EPÓXICO","descripcion":"EPÓXICO 5 MINUTOS POXIPOL","precio":45,"stock":8,"categoria":"Adhesivos"},
+]
+
+
+# ══════════════════════════════════════════════════════
+# 🍕 4. RESTAURANT / FONDA / TAQUERÍA
+# ══════════════════════════════════════════════════════
+# Nombre sugerido: "Fonda [Nombre]" o "Taquería [Nombre]"
+# Cambiar: "Partes Eléctricas" → "Alimentos y bebidas"
+# NOTA: Los precios son de venta al cliente, no de costo
+
+RESTAURANTE = [
+  # TACOS
+  {"codigo":"TACO-RES","descripcion":"TACO DE RES ASADA","precio":20,"stock":99,"categoria":"Tacos"},
+  {"codigo":"TACO-PORK","descripcion":"TACO DE PASTOR","precio":18,"stock":99,"categoria":"Tacos"},
+  {"codigo":"TACO-POLLO","descripcion":"TACO DE POLLO","precio":18,"stock":99,"categoria":"Tacos"},
+  {"codigo":"TACO-CHORI","descripcion":"TACO DE CHORIZO","precio":20,"stock":99,"categoria":"Tacos"},
+  {"codigo":"TACO-BISTEC","descripcion":"TACO DE BISTEC","precio":22,"stock":99,"categoria":"Tacos"},
+  {"codigo":"TACO-CANASTA","descripcion":"TACO DE CANASTA SURTIDO","precio":12,"stock":99,"categoria":"Tacos"},
+  {"codigo":"QUESADILLA","descripcion":"QUESADILLA QUESO","precio":25,"stock":99,"categoria":"Tacos"},
+  {"codigo":"GRINGA","descripcion":"GRINGA PASTOR","precio":45,"stock":99,"categoria":"Tacos"},
+
+  # GUISADOS
+  {"codigo":"GUISADO-MOLE","descripcion":"GUISADO MOLE CON POLLO","precio":65,"stock":99,"categoria":"Guisados"},
+  {"codigo":"GUISADO-VERDE","descripcion":"GUISADO POLLO EN SALSA VERDE","precio":60,"stock":99,"categoria":"Guisados"},
+  {"codigo":"GUISADO-CHICHA","descripcion":"GUISADO CHICHARRÓN EN SALSA","precio":58,"stock":99,"categoria":"Guisados"},
+  {"codigo":"GUISADO-RAJAS","descripcion":"GUISADO RAJAS CON CREMA","precio":55,"stock":99,"categoria":"Guisados"},
+  {"codigo":"FRIJOLES","descripcion":"FRIJOLES DE OLLA","precio":25,"stock":99,"categoria":"Guisados"},
+  {"codigo":"ARROZ","descripcion":"ARROZ ROJO","precio":20,"stock":99,"categoria":"Guisados"},
+
+  # SOPAS
+  {"codigo":"CALDO-RES","descripcion":"CALDO DE RES","precio":75,"stock":99,"categoria":"Sopas"},
+  {"codigo":"CALDO-POLLO","descripcion":"CALDO DE POLLO CON VERDURAS","precio":65,"stock":99,"categoria":"Sopas"},
+  {"codigo":"MENUDO","descripcion":"MENUDO ROJO","precio":80,"stock":99,"categoria":"Sopas"},
+  {"codigo":"POZOLE","descripcion":"POZOLE ROJO GRANDE","precio":85,"stock":99,"categoria":"Sopas"},
+  {"codigo":"SOPA-FIDEO","descripcion":"SOPA DE FIDEO SECO","precio":30,"stock":99,"categoria":"Sopas"},
+
+  # BEBIDAS
+  {"codigo":"AGUA-JAMAICA","descripcion":"AGUA FRESCA JAMAICA 500ML","precio":15,"stock":99,"categoria":"Bebidas"},
+  {"codigo":"AGUA-HORCHATA","descripcion":"AGUA FRESCA HORCHATA 500ML","precio":15,"stock":99,"categoria":"Bebidas"},
+  {"codigo":"REFRESCO","descripcion":"REFRESCO COCA COLA 355ML LATA","precio":22,"stock":48,"categoria":"Bebidas"},
+  {"codigo":"CAFÉ","descripcion":"CAFÉ DE OLLA","precio":18,"stock":99,"categoria":"Bebidas"},
+
+  # EXTRAS
+  {"codigo":"ORDEN-TORTILLAS","descripcion":"ORDEN TORTILLAS 5 PZA","precio":10,"stock":99,"categoria":"Extras"},
+  {"codigo":"LIMÓN","descripcion":"ORDEN LIMONES","precio":5,"stock":99,"categoria":"Extras"},
+  {"codigo":"SALSA-VERDE","descripcion":"SALSA VERDE EXTRA","precio":5,"stock":99,"categoria":"Extras"},
+  {"codigo":"CREMA-EXTRA","descripcion":"CREMA EXTRA","precio":8,"stock":99,"categoria":"Extras"},
+]
+
+
+# ══════════════════════════════════════════════════════
+# 📚 5. PAPELERÍA
+# ══════════════════════════════════════════════════════
+# Nombre sugerido: "Papelería [Nombre]"
+# Cambiar: "Partes Eléctricas" → "Útiles y papelería"
+
+PAPELERIA = [
+  # ESCRITURA
+  {"codigo":"PLUMA-BIC","descripcion":"PLUMA BIC CRISTAL AZUL","precio":5,"stock":100,"categoria":"Escritura"},
+  {"codigo":"PLUMA-PILOT","descripcion":"PLUMA PILOT G2 AZUL","precio":18,"stock":30,"categoria":"Escritura"},
+  {"codigo":"LAPIZ-2","descripcion":"LÁPIZ #2 MONGOL","precio":4,"stock":100,"categoria":"Escritura"},
+  {"codigo":"MARCA-AMARILLO","descripcion":"MARCADOR RESALTADOR AMARILLO","precio":12,"stock":30,"categoria":"Escritura"},
+  {"codigo":"PLUMÓN-NEGRO","descripcion":"PLUMÓN PERMANENTE NEGRO","precio":15,"stock":24,"categoria":"Escritura"},
+  {"codigo":"GOMA","descripcion":"GOMA PELIKAN BLANCA","precio":5,"stock":60,"categoria":"Escritura"},
+  {"codigo":"SACAPUNTAS","descripcion":"SACAPUNTAS METÁLICO","precio":8,"stock":30,"categoria":"Escritura"},
+
+  # PAPELERÍA
+  {"codigo":"HOJAS-CARTA","descripcion":"PAPEL BOND CARTA 100 HOJAS","precio":45,"stock":20,"categoria":"Papel"},
+  {"codigo":"HOJAS-OFICO","descripcion":"PAPEL BOND OFICIO 100 HOJAS","precio":52,"stock":15,"categoria":"Papel"},
+  {"codigo":"CARPETA","descripcion":"CARPETA ARGOLLAS 2 PULGADAS","precio":55,"stock":12,"categoria":"Papel"},
+  {"codigo":"FOLDER","descripcion":"FOLDER MANILA CARTA 25 PZA","precio":35,"stock":10,"categoria":"Papel"},
+  {"codigo":"CUADERNO-100","descripcion":"CUADERNO PROFESIONAL 100 HOJAS","precio":28,"stock":24,"categoria":"Papel"},
+  {"codigo":"CUADERNO-CHICO","descripcion":"CUADERNO FORMA ITALIANA 60 HOJAS","precio":18,"stock":24,"categoria":"Papel"},
+  {"codigo":"POST-IT","descripcion":"POST-IT NOTAS ADHESIVAS 100 PZA","precio":35,"stock":15,"categoria":"Papel"},
+
+  # TIJERAS Y CORTE
+  {"codigo":"TIJERAS","descripcion":"TIJERAS ESCOLAR 16CM","precio":22,"stock":15,"categoria":"Corte"},
+  {"codigo":"CUTTER","descripcion":"CUTTER CHICO BACO","precio":15,"stock":15,"categoria":"Corte"},
+  {"codigo":"REGLA30","descripcion":"REGLA PLÁSTICO 30CM","precio":8,"stock":24,"categoria":"Corte"},
+
+  # PEGAMENTOS
+  {"codigo":"RESISTOL-ST","descripcion":"RESISTOL BARRA GRANDE","precio":18,"stock":20,"categoria":"Pegamentos"},
+  {"codigo":"DIUREX","descripcion":"DIUREX TRANSPARENTE 18MM","precio":12,"stock":24,"categoria":"Pegamentos"},
+  {"codigo":"MASKING-PEQ","descripcion":"MASKING TAPE CHICO 18MM","precio":12,"stock":20,"categoria":"Pegamentos"},
+  {"codigo":"BINDER-CLIPS","descripcion":"BINDER CLIPS MEDIANO 12 PZA","precio":15,"stock":20,"categoria":"Pegamentos"},
+
+  # IMPRESIÓN
+  {"codigo":"IMPRESION-BN","descripcion":"IMPRESIÓN B/N POR HOJA","precio":2,"stock":99,"categoria":"Servicios"},
+  {"codigo":"IMPRESION-COLOR","descripcion":"IMPRESIÓN COLOR POR HOJA","precio":8,"stock":99,"categoria":"Servicios"},
+  {"codigo":"COPIA","descripcion":"COPIA B/N POR HOJA","precio":1,"stock":99,"categoria":"Servicios"},
+  {"codigo":"ENGARGOLADO","descripcion":"ENGARGOLADO ESPIRAL","precio":25,"stock":99,"categoria":"Servicios"},
+  {"codigo":"PLASTIFICADO","descripcion":"PLASTIFICADO CARTA","precio":20,"stock":99,"categoria":"Servicios"},
+  {"codigo":"ESCANEO","descripcion":"ESCANEO POR HOJA","precio":5,"stock":99,"categoria":"Servicios"},
+]
+
+
+# ══════════════════════════════════════════════════════
+# 🌸 6. ESTÉTICA / PELUQUERÍA
+# ══════════════════════════════════════════════════════
+# Nombre sugerido: "Estética [Nombre]"
+# Cambiar: "Partes Eléctricas" → "Servicios de belleza"
+# NOTA: Los "productos" son servicios con precio fijo
+
+ESTETICA = [
+  # CORTES
+  {"codigo":"CORTE-CAB","descripcion":"CORTE DE CABELLO CABALLERO","precio":80,"stock":99,"categoria":"Cortes"},
+  {"codigo":"CORTE-NINO","descripcion":"CORTE DE CABELLO NIÑO","precio":60,"stock":99,"categoria":"Cortes"},
+  {"codigo":"CORTE-DAMA","descripcion":"CORTE DE CABELLO DAMA","precio":120,"stock":99,"categoria":"Cortes"},
+  {"codigo":"CORTE-PUNTAS","descripcion":"DESPUNTE DE PUNTAS","precio":80,"stock":99,"categoria":"Cortes"},
+  {"codigo":"RASURADO","descripcion":"RASURADO COMPLETO NAVAJA","precio":60,"stock":99,"categoria":"Cortes"},
+  {"codigo":"BARBA","descripcion":"PERFILADO DE BARBA","precio":50,"stock":99,"categoria":"Cortes"},
+
+  # COLORACIÓN
+  {"codigo":"TINTE","descripcion":"TINTE UN PROCESO","precio":250,"stock":99,"categoria":"Coloración"},
+  {"codigo":"MECHAS","descripcion":"MECHAS / LUCES","precio":350,"stock":99,"categoria":"Coloración"},
+  {"codigo":"DECOLORACIÓN","descripcion":"DECOLORACIÓN COMPLETA","precio":450,"stock":99,"categoria":"Coloración"},
+  {"codigo":"RETOQUE-RAIZ","descripcion":"RETOQUE DE RAÍZ","precio":180,"stock":99,"categoria":"Coloración"},
+
+  # TRATAMIENTOS
+  {"codigo":"KERATINA","descripcion":"KERATINA / ALISADO","precio":600,"stock":99,"categoria":"Tratamientos"},
+  {"codigo":"HIDRATACION","descripcion":"HIDRATACIÓN PROFUNDA","precio":200,"stock":99,"categoria":"Tratamientos"},
+  {"codigo":"PERMANENTE","descripcion":"PERMANENTE RIZADO","precio":350,"stock":99,"categoria":"Tratamientos"},
+
+  # UÑAS
+  {"codigo":"MANICURE","descripcion":"MANICURE TRADICIONAL","precio":80,"stock":99,"categoria":"Uñas"},
+  {"codigo":"PEDICURE","descripcion":"PEDICURE COMPLETO","precio":120,"stock":99,"categoria":"Uñas"},
+  {"codigo":"UÑAS-GEL","descripcion":"UÑAS GEL SCULPTADAS","precio":350,"stock":99,"categoria":"Uñas"},
+  {"codigo":"UÑAS-ACRILICO","descripcion":"UÑAS ACRÍLICO JUEGO","precio":300,"stock":99,"categoria":"Uñas"},
+
+  # PRODUCTOS VENTA
+  {"codigo":"SHAMPOO-VENTA","descripcion":"SHAMPOO PROFESIONAL 300ML","precio":120,"stock":10,"categoria":"Productos"},
+  {"codigo":"ACONDICIONADOR","descripcion":"ACONDICIONADOR PROFESIONAL 300ML","precio":110,"stock":10,"categoria":"Productos"},
+  {"codigo":"TINTE-VENTA","descripcion":"TINTE IGORA ROYAL","precio":85,"stock":15,"categoria":"Productos"},
+]
