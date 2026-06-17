@@ -1,2 +1,0 @@
-# Minisuper
-Punto de venta 
